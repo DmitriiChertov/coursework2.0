@@ -8,40 +8,24 @@ public class Employee {
     private int departmentNumber;
     private int id;
     private static int counter;
-    public Employee(String name, String surname, String patronymic, float salary, int departmentNumber, int id) {
+    public Employee(String name, String surname, String patronymic, float salary, int departmentNumber) {
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
         this.salary = salary;
         this.departmentNumber = departmentNumber;
-        this.id = getCounter();
-        counter++;
+        this.id = counter++;
     }
 
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSurname() {
         return surname;
     }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public String getPatronymic() {
         return patronymic;
     }
-
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
-    }
-
     public float getSalary() {
         return salary;
     }
@@ -58,13 +42,6 @@ public class Employee {
         this.departmentNumber = departmentNumber;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
     public int getCounter() {
         return counter;
     }
