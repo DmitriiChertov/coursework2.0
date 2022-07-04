@@ -64,11 +64,11 @@ public class Main {
         EMPLOYEES[8] = new Employee("Юлия", "Евгеньевна", "Смолина", 160798.0F, 4);
         EMPLOYEES[9] = new Employee("Татьяна", "Станиславовна", "Исаева", 190875.0F, 4);
 
+        allStaff(EMPLOYEES);
         countMinSalary(EMPLOYEES);
         countMaxSalary(EMPLOYEES);
         sumSalary(EMPLOYEES);
         middleSumSalary(EMPLOYEES);
-        allStaff(EMPLOYEES);
         staffName(EMPLOYEES);
     }
 }
