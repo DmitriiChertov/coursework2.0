@@ -39,6 +39,8 @@ public class Main {
         return sum;
     }
 
+    private static final Employee[] EMPLOYEES = new Employee[10];
+
     private static void allStaff(Employee[] employees) {
         for (Employee employee : employees) {
             System.out.println(employee);
@@ -51,23 +53,22 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        Employee[] employee = new Employee[10];
-        employee[0] = new Employee("Георгий", "Евгеньевич", "Широков", 189990.0F, 1);
-        employee[1] = new Employee("Василий", "Генадьевич", "Прохоров", 188468.0F, 4);
-        employee[2] = new Employee("Кристина", "Андреевна", "Крылова", 202079.0F, 2);
-        employee[3] = new Employee("Андрей", "Васильевич", "Сухов", 198352.0F, 1);
-        employee[4] = new Employee("Игорь", "Андреевич", "Конопля", 220987.0F, 3);
-        employee[5] = new Employee("Дмитрий", "Александрович", "Шац", 216875.0F, 4);
-        employee[6] = new Employee("Константин", "Григорьевич", "Сухоруков", 249785.0F, 5);
-        employee[7] = new Employee("Александра", "Прокофьевна", "Иванова", 198732.0F, 3);
-        employee[8] = new Employee("Юлия", "Евгеньевна", "Смолина", 160798.0F, 4);
-        employee[9] = new Employee("Татьяна", "Станиславовна", "Исаева", 190875.0F, 4);
+        EMPLOYEES[0] = new Employee("Георгий", "Евгеньевич", "Широков", 189990.0F, 1);
+        EMPLOYEES[1] = new Employee("Василий", "Генадьевич", "Прохоров", 188468.0F, 4);
+        EMPLOYEES[2] = new Employee("Кристина", "Андреевна", "Крылова", 202079.0F, 2);
+        EMPLOYEES[3] = new Employee("Андрей", "Васильевич", "Сухов", 198352.0F, 1);
+        EMPLOYEES[4] = new Employee("Игорь", "Андреевич", "Конопля", 220987.0F, 3);
+        EMPLOYEES[5] = new Employee("Дмитрий", "Александрович", "Шац", 216875.0F, 4);
+        EMPLOYEES[6] = new Employee("Константин", "Григорьевич", "Сухоруков", 249785.0F, 5);
+        EMPLOYEES[7] = new Employee("Александра", "Прокофьевна", "Иванова", 198732.0F, 3);
+        EMPLOYEES[8] = new Employee("Юлия", "Евгеньевна", "Смолина", 160798.0F, 4);
+        EMPLOYEES[9] = new Employee("Татьяна", "Станиславовна", "Исаева", 190875.0F, 4);
 
-        countMinSalary(employee);
-        countMaxSalary(employee);
-        sumSalary(employee);
-        middleSumSalary(employee);
-        allStaff(employee);
-        staffName(employee);
+        countMinSalary(EMPLOYEES);
+        countMaxSalary(EMPLOYEES);
+        sumSalary(EMPLOYEES);
+        middleSumSalary(EMPLOYEES);
+        allStaff(EMPLOYEES);
+        staffName(EMPLOYEES);
     }
 }
